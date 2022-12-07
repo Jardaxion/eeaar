@@ -36,6 +36,38 @@ $(document).ready(() => {
             }
         ]
     });
+    //Отзывы
+    $('.reviews__reviews').slick({
+        arrows: true,
+        dots: false,
+        autoplay: false,
+        nextArrow: '.reviews__rightArrow',
+        prevArrow: '.reviews__leftArrow',
+        slidesToShow: 2,
+    })
+    //Слайдер как происходит получение услуги
+    $('.questions__content').slick({
+        dots: false,
+        autoplay: false,
+        nextArrow: '.questions__rightArrow',
+        prevArrow: '.questions__leftArrow',
+        slidesToShow: 3,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: {
+                    slidesToShow: 2
+                },
+            },
+            {
+                breakpoint: 569,
+                settings: {
+                    slidesToShow: 1
+                },
+            }
+        ]
+    })
 
     //Прокручиваемая строка с картиками
     $('.partners__content').marquee({
@@ -77,6 +109,13 @@ $(document).ready(() => {
         e.preventDefault();
 
         reOpenModal($(this).data('modal'));
+    })
+
+    //Закрытие открытие вопроса в faq
+    $('.js-close-open-question').on('click', function(){
+        $(this).toggleClass('select');
+
+        $(this).parent().next().slideToggle();
     })
 })
 
