@@ -1945,6 +1945,9 @@ input::placeholder
     {
         font-size: 24px;
         line-height: 30px;
+
+        position: relative;
+        z-index: 5;
     }
     .header__inner
     {
@@ -2122,6 +2125,10 @@ input::placeholder
     {
         width: 100%;
     }
+    .partners__content-img:not(:last-of-type)
+    {
+        margin-right: 59px;
+    }
     .reviews__inner
     {
         display: block;
@@ -2142,19 +2149,25 @@ input::placeholder
     {
         right: 0;
     }
+    .reviews__second
+    {
+        top: 39px;
+    }
     .review:not(:last-child)
     {
         margin-right: 10px;
     }
     .review__name
     {
+        font-size: 10px;
+
         right: 10px;
     }
     .review__background
     {
         width: 100%;
     }
-    .questions___question:not(:last-of-type)
+    .questions__question:not(:last-of-type)
     {
         margin-right: 0;
     }
@@ -2216,6 +2229,10 @@ input::placeholder
     {
         bottom: -246px;
     }
+    .faq__inner
+    {
+        padding: 40px 20px;
+    }
     .footer__inner
     {
             flex-direction: column;
@@ -2244,6 +2261,16 @@ input::placeholder
     .footer__phone
     {
         margin-right: 0;
+    }
+    .footer__logo
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 @media (max-width: 400px)
