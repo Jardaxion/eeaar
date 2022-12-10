@@ -1936,6 +1936,7 @@ input::placeholder
     main
     {
         overflow-x: hidden;
+        overflow-y: scroll;
 
         width: 100vw;
     }
