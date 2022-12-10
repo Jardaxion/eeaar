@@ -2193,7 +2193,7 @@ input::placeholder
     }
     .partners
     {
-        padding-bottom: 80px;
+        padding-bottom: 176px;
     }
     .partners__title
     {
@@ -2233,7 +2233,7 @@ input::placeholder
     }
     .reviews__second
     {
-        top: -65px;
+        top: -132px;
         right: -25px;
     }
     .review:not(:last-child)
