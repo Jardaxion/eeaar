@@ -1933,13 +1933,27 @@ input::placeholder
 }
 @media (max-width: 960px)
 {
+    main
+    {
+        overflow-x: hidden;
+
+        width: 100vw;
+    }
     .firstCircle
     {
-        display: none;
+        top: 319px;
+    }
+    .firstCircle svg *
+    {
+        fill: #f5f5f5;
     }
     .secondCircle
     {
-        top: 211px;
+        top: 0;
+    }
+    .secondCircle svg *
+    {
+        fill: #f5f5f5;
     }
     .title
     {
@@ -1948,6 +1962,10 @@ input::placeholder
 
         position: relative;
         z-index: 5;
+    }
+    .header
+    {
+        background: #f9f9f9;
     }
     .header__inner
     {
@@ -1964,7 +1982,7 @@ input::placeholder
         display: -ms-flexbox;
         display: flex;
 
-        padding: 45px 0;
+        padding: 30px 0;
     }
     .header__inner.mobile .header__left,
     .header__inner.mobile .header__right
@@ -2006,17 +2024,36 @@ input::placeholder
     {
         text-align: center;
     }
+    .sliderMain
+    {
+        margin-top: 45px;
+    }
     .sliderMain__inner
     {
         padding: 0;
     }
     .sliderMain__arrow
     {
-        display: none !important;
+        top: 96%;
+
+        padding: 11px 14px 10px 12px;
+
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
     }
-    .sliderMain__arrow.mobile
+    .sliderMain__rightArrow
     {
-        display: block;
+        right: 69px;
+    }
+    .sliderMain__leftArrow
+    {
+        left: 69px;
+    }
+    .sliderMain .slick-dots
+    {
+        margin-top: 20px;
+        margin-bottom: 43px;
     }
     .slider__slide
     {
@@ -2031,7 +2068,21 @@ input::placeholder
     }
     .slider__first
     {
-        left: 18px;
+        top: -10%;
+        left: 1%;
+    }
+    .slider__first svg
+    {
+        width: 30vw;
+    }
+    .slider__second
+    {
+        right: 10%;
+        bottom: -15%;
+    }
+    .slider__second svg
+    {
+        width: 25vw;
     }
     .slide__button
     {
@@ -2054,12 +2105,13 @@ input::placeholder
     .slide__descirption
     {
         max-width: none;
+        margin-bottom: 12px;
 
         text-align: center;
     }
     .slide__img
     {
-        width: 100%;
+        width: 75%;
         height: auto;
 
         -o-object-fit: fill;
@@ -2077,12 +2129,26 @@ input::placeholder
     }
     .slide__img-wrp svg
     {
-        right: -5%;
+        right: -2%;
     }
     .slide__backcircle svg
     {
         width: 100%;
         height: 100%;
+    }
+    .packages__title
+    {
+        text-align: center;
+    }
+    .packages__title::after
+    {
+        left: 50%;
+
+        width: 196px;
+
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .packages__first,
     .packages__second
@@ -2096,10 +2162,6 @@ input::placeholder
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-    }
-    .packages__title::after
-    {
-        left: 0;
     }
     .packages__left-content
     {
@@ -2125,6 +2187,22 @@ input::placeholder
     {
         width: 100%;
     }
+    .package__button
+    {
+        padding: 13px 0;
+    }
+    .partners
+    {
+        padding-bottom: 80px;
+    }
+    .partners__title
+    {
+        margin-bottom: 40px;
+    }
+    .partners__content-img
+    {
+        height: 80px;
+    }
     .partners__content-img:not(:last-of-type)
     {
         margin-right: 59px;
@@ -2147,11 +2225,16 @@ input::placeholder
     }
     .reviews__first
     {
-        right: 0;
+        right: -48px;
+    }
+    .reviews__first svg
+    {
+        width: 153px;
     }
     .reviews__second
     {
-        top: 39px;
+        top: -65px;
+        right: -25px;
     }
     .review:not(:last-child)
     {
@@ -2166,6 +2249,10 @@ input::placeholder
     .review__background
     {
         width: 100%;
+    }
+    .questions
+    {
+        padding: 68px 0 28px;
     }
     .questions__question:not(:last-of-type)
     {
@@ -2187,9 +2274,21 @@ input::placeholder
         -ms-flex-pack: center;
         justify-content: center;
     }
+    .questions__first
+    {
+        display: none;
+    }
+    .questions__line
+    {
+        margin-bottom: 29px;
+    }
+    .question__title
+    {
+        font-weight: 700;
+    }
     .weSocial
     {
-        padding: 161px 0 399px;
+        padding: 52px 0 426px;
     }
     .weSocial__title::after
     {
@@ -2232,6 +2331,10 @@ input::placeholder
     .faq__inner
     {
         padding: 40px 20px;
+    }
+    .text
+    {
+        padding: 23px 0;
     }
     .footer__inner
     {
