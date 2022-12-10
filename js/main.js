@@ -26,15 +26,7 @@ $(document).ready(() => {
         speed: 650,
         autoplaySpeed: 5000,
         slidesPerRow: 1,
-        infinite: true,
-        responsive: [
-            {
-                breakpoint: 961,
-                settings: {
-                    arrows: false
-                },
-            }
-        ]
+        infinite: true
     });
     //Отзывы
     $('.reviews__reviews').slick({
@@ -56,12 +48,6 @@ $(document).ready(() => {
         responsive: [
             {
                 breakpoint: 961,
-                settings: {
-                    slidesToShow: 2
-                },
-            },
-            {
-                breakpoint: 569,
                 settings: {
                     slidesToShow: 1
                 },
