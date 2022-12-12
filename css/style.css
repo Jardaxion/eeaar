@@ -1438,14 +1438,15 @@ input::placeholder
 
     border-radius: 14px;
 }
+.review:not(:last-child)
+{
+    margin-right: 10px;
+}
 .review__background
 {
     height: 100%;
 
     border-radius: 14px;
-
-    -o-object-fit: cover;
-       object-fit: cover;
 }
 .review__name
 {
@@ -1761,7 +1762,7 @@ input::placeholder
 {
     position: relative;
 
-    padding-top: 87px;
+    padding-top: 20px;
     padding-bottom: 105px;
 }
 .faq .container
@@ -2289,7 +2290,7 @@ input::placeholder
     }
     .weSocial
     {
-        padding: 52px 0 426px;
+        padding: 52px 0 289px;
     }
     .weSocial__title::after
     {
@@ -2314,7 +2315,32 @@ input::placeholder
     }
     .weSocial__teleg
     {
-        top: 245px;
+        top: -37.5vw;
+    }
+    .weSocial__teleg img
+    {
+        width: 69vw;
+    }
+    .weSocial__whats
+    {
+        bottom: -63vw;
+        left: 10px;
+    }
+    .weSocial__whats img
+    {
+        width: 35vw;
+    }
+    .weSocial__instagramm
+    {
+        top: 1.75vw;
+
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    .weSocial__instagramm img
+    {
+        width: 50vw;
     }
     .weSocial__background svg
     {
@@ -2324,10 +2350,6 @@ input::placeholder
     .weSocial__first
     {
         display: none;
-    }
-    .weSocial__whats
-    {
-        bottom: -246px;
     }
     .faq__inner
     {
@@ -2382,6 +2404,10 @@ input::placeholder
     .header__logo-img
     {
         width: 142px;
+    }
+    .header__menuBtn-text
+    {
+        margin-bottom: 8px;
     }
 }
 

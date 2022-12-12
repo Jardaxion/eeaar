@@ -15,20 +15,19 @@ $(document).ready(() => {
 
     //Слайдеры
     //Начальный слайдер
-    // $('.sliderMain__content').slick({
-    //     nextArrow: '.sliderMain__rightArrow',
-    //     prevArrow: '.sliderMain__leftArrow',
-    //     customPaging : function(slider, i) {
-    //         return '<div class="slider__dots"></div>';
-    //     },
-    //     dots: true,
-    //     autoplay: true,
-    //     speed: 650,
-    //     autoplaySpeed: 5000,
-    //     slidesPerRow: 1,
-    //     infinite: true,
-    //     swipe: false
-    // });
+    $('.sliderMain__content').slick({
+        nextArrow: '.sliderMain__rightArrow',
+        prevArrow: '.sliderMain__leftArrow',
+        customPaging : function(slider, i) {
+            return '<div class="slider__dots"></div>';
+        },
+        dots: true,
+        autoplay: true,
+        speed: 650,
+        autoplaySpeed: 5000,
+        slidesPerRow: 1,
+        infinite: true
+    });
     //Отзывы
     $('.reviews__reviews').slick({
         arrows: true,
@@ -104,6 +103,9 @@ $(document).ready(() => {
 
         $(this).parent().next().slideToggle();
     })
+
+    max('.packages__package');
+    max('.package__list');
 })
 
 //Модальные окна
@@ -125,4 +127,14 @@ function closeModal() {
 function reOpenModal(id) {
     $('.modal.active').removeClass('active');
     $('.modal#'+id).addClass('active');
+}
+
+//Вычесление максимума
+function max(className){
+    let max = 0;
+    $(className).each(function() {
+        max = $(this).height() > max ? $(this).height() : max;
+    })
+
+    $(className).height(max);
 }
