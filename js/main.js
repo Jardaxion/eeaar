@@ -15,20 +15,20 @@ $(document).ready(() => {
 
     //Слайдеры
     //Начальный слайдер
-    $('.sliderMain__content').slick({
-        nextArrow: '.sliderMain__rightArrow',
-        prevArrow: '.sliderMain__leftArrow',
-        customPaging : function(slider, i) {
-            return '<div class="slider__dots"></div>';
-        },
-        dots: true,
-        autoplay: true,
-        speed: 650,
-        autoplaySpeed: 5000,
-        slidesPerRow: 1,
-        infinite: true,
-        swipe: false
-    });
+    // $('.sliderMain__content').slick({
+    //     nextArrow: '.sliderMain__rightArrow',
+    //     prevArrow: '.sliderMain__leftArrow',
+    //     customPaging : function(slider, i) {
+    //         return '<div class="slider__dots"></div>';
+    //     },
+    //     dots: true,
+    //     autoplay: true,
+    //     speed: 650,
+    //     autoplaySpeed: 5000,
+    //     slidesPerRow: 1,
+    //     infinite: true,
+    //     swipe: false
+    // });
     //Отзывы
     $('.reviews__reviews').slick({
         arrows: true,
