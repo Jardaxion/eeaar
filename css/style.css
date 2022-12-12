@@ -1738,6 +1738,7 @@ input::placeholder
 .weSocial__background
 {
     position: absolute;
+    z-index: 1;
     top: 50%;
     right: 0;
 

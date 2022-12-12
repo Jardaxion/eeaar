@@ -26,7 +26,8 @@ $(document).ready(() => {
         speed: 650,
         autoplaySpeed: 5000,
         slidesPerRow: 1,
-        infinite: true
+        infinite: true,
+        swipe: false
     });
     //Отзывы
     $('.reviews__reviews').slick({
