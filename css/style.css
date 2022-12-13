@@ -301,6 +301,20 @@ main
     pointer-events: none;
 }
 
+.swiper-button-next,
+.swiper-button-prev
+{
+    position: unset !important;
+
+    display: block !important;
+
+    width: 13px !important;
+    height: 16px !important;
+    margin-top: 0 !important;
+
+    cursor: pointer !important;
+}
+
 /* UI компоненты */
 /* Модальное окно */
 .modal
@@ -857,26 +871,13 @@ input::placeholder
 {
     right: 140px;
 }
-.sliderMain .slick-dots
+.sliderMain__dots span
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    margin-top: 74px;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
 }
-.sliderMain .slick-dots li:not(:last-of-type)
-{
-    margin-right: 10px;
-}
-.sliderMain .slick-dots li.slick-active .slider__dots
+.sliderMain__dots span.swiper-pagination-bullet-active
 {
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
@@ -884,13 +885,17 @@ input::placeholder
 
     background: black;
 }
-.sliderMain .slick-dots li.slick-active + li .slider__dots
+.sliderMain__dots span.swiper-pagination-bullet-active + span
 {
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
 
     background: rgba(0, 0, 0, .7);
+}
+.sliderMain .swiper-pagination-bullet
+{
+    background: rgba(0, 0, 0, .35);
 }
 
 /* Настройки внутри самого слайдера */
@@ -1547,10 +1552,6 @@ input::placeholder
     -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
             box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
 }
-.questions__question:not(:last-of-type)
-{
-    margin-right: 17px;
-}
 
 /* Мини блок */
 .question__title
@@ -1926,6 +1927,17 @@ input::placeholder
 }
 
 /* Адаптация */
+@media (max-width: 1360px)
+{
+    .sliderMain__leftArrow
+    {
+        left: 100px;
+    }
+    .sliderMain__rightArrow
+    {
+        right: 68px;
+    }
+}
 /* мобльная версия */
 @media (min-width: 961px)
 {

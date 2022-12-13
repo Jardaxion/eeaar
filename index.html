@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap" rel="stylesheet">
@@ -89,122 +90,125 @@
     <section class="sliderMain"> 
       <div class="sliderMain__inner">
         <div class="sliderMain__leftArrow sliderMain__arrow">
-          <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
           </svg>
         </div>
-        <div class="sliderMain__content">
-          <div class="slide__wrapper">
-            <div class="slider__slide">
-              <div class="slide__left">
-                <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
-                <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
-              </div>
-              <div class="slide__right">
-                <div class="slider__first circle">
-                  <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
-                  </svg>
+        <div class="sliderMain__content swiper">
+          <div class="swiper-wrapper">
+            <div class="slide__wrapper swiper-slide">
+              <div class="slider__slide">
+                <div class="slide__left">
+                  <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
+                  <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
                 </div>
-                <div class="slider__second circle">
-                  <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
-                  </svg>
-                </div>
-                <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
-                  <div class="slide__backcircle circle">
-                    <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                <div class="slide__right">
+                  <div class="slider__first circle">
+                    <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
                     </svg>
+                  </div>
+                  <div class="slider__second circle">
+                    <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
+                    </svg>
+                  </div>
+                  <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
+                    <div class="slide__backcircle circle">
+                      <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slide__wrapper">
-            <div class="slider__slide">
-              <div class="slide__left">
-                <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
-                <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
-              </div>
-              <div class="slide__right">
-                <div class="slider__first circle">
-                  <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
-                  </svg>
+            <div class="slide__wrapper swiper-slide">
+              <div class="slider__slide">
+                <div class="slide__left">
+                  <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
+                  <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
                 </div>
-                <div class="slider__second circle">
-                  <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
-                  </svg>
-                </div>
-                <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
-                  <div class="slide__backcircle circle">
-                    <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                <div class="slide__right">
+                  <div class="slider__first circle">
+                    <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
                     </svg>
+                  </div>
+                  <div class="slider__second circle">
+                    <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
+                    </svg>
+                  </div>
+                  <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
+                    <div class="slide__backcircle circle">
+                      <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slide__wrapper">
-            <div class="slider__slide">
-              <div class="slide__left">
-                <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
-                <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
-              </div>
-              <div class="slide__right">
-                <div class="slider__first circle">
-                  <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
-                  </svg>
+            <div class="slide__wrapper swiper-slide">
+              <div class="slider__slide">
+                <div class="slide__left">
+                  <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
+                  <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
                 </div>
-                <div class="slider__second circle">
-                  <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
-                  </svg>
-                </div>
-                <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
-                  <div class="slide__backcircle circle">
-                    <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                <div class="slide__right">
+                  <div class="slider__first circle">
+                    <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
                     </svg>
+                  </div>
+                  <div class="slider__second circle">
+                    <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
+                    </svg>
+                  </div>
+                  <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
+                    <div class="slide__backcircle circle">
+                      <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slide__wrapper">
-            <div class="slider__slide">
-              <div class="slide__left">
-                <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
-                <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
-              </div>
-              <div class="slide__right">
-                <div class="slider__first circle">
-                  <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
-                  </svg>
+            <div class="slide__wrapper swiper-slide">
+              <div class="slider__slide">
+                <div class="slide__left">
+                  <p class="slide__title">Авторский курс "Сертификация от 0 до успеха!"  </p>
+                  <p class="slide__descirption">Оставьте заявку и получите скидку на любой пакет</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
                 </div>
-                <div class="slider__second circle">
-                  <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
-                  </svg>
-                </div>
-                <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
-                  <div class="slide__backcircle circle">
-                    <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                <div class="slide__right">
+                  <div class="slider__first circle">
+                    <svg width="154" height="154" viewbox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="77" cy="77" r="77" fill="#F3E7D6"></circle>
                     </svg>
+                  </div>
+                  <div class="slider__second circle">
+                    <svg width="107" height="107" viewbox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M107 53.5C107 83.0472 83.0472 107 53.5 107C23.9528 107 0 83.0472 0 53.5C0 23.9528 23.9528 0 53.5 0C83.0472 0 107 23.9528 107 53.5ZM16.05 53.5C16.05 74.1831 32.8169 90.95 53.5 90.95C74.1831 90.95 90.95 74.1831 90.95 53.5C90.95 32.8169 74.1831 16.05 53.5 16.05C32.8169 16.05 16.05 32.8169 16.05 53.5Z" fill="#CD474A"></path>
+                    </svg>
+                  </div>
+                  <div class="slide__img-wrp"><img class="slide__img" src="img/woman.png" alt="">
+                    <div class="slide__backcircle circle">
+                      <svg width="357" height="357" viewbox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="178.5" cy="178.5" r="178" stroke="#CD474A"></circle>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="sliderMain__dots swiper-pagination"></div>
         <div class="sliderMain__rightArrow sliderMain__arrow">
-          <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
           </svg>
         </div>
@@ -360,12 +364,12 @@
             <hr class="reviews__hr">
             <div class="reviews__arrows">
               <div class="arrow reviews__leftArrow">
-                <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
                 </svg>
               </div>
               <div class="arrow reviews__rightArrow">
-                <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
                 </svg>
               </div>
@@ -377,10 +381,12 @@
             </svg>
           </div>
           <div class="reviews__right">
-            <div class="reviews__reviews"><a class="review" href="#"><img class="review__background" src="img/reviews/woman.png" alt="">
-                <p class="review__name">Мария Краснова</p></a><a class="review" href="#"><img class="review__background" src="img/reviews/man.png" alt="">
-                <p class="review__name">Иван Иванов</p></a><a class="review" href="#"><img class="review__background" src="img/reviews/man.png" alt="">
-                <p class="review__name">Иван Куликов</p></a>
+            <div class="swiper reviews__swiper">
+              <div class="reviews__reviews swiper-wrapper"><a class="review swiper-slide" href="#"><img class="review__background" src="img/reviews/woman.png" alt="">
+                  <p class="review__name">Мария Краснова</p></a><a class="review swiper-slide" href="#"><img class="review__background" src="img/reviews/man.png" alt="">
+                  <p class="review__name">Иван Иванов</p></a><a class="review swiper-slide" href="#"><img class="review__background" src="img/reviews/man.png" alt="">
+                  <p class="review__name">Иван Куликов</p></a>
+              </div>
             </div>
           </div>
         </div>
@@ -397,48 +403,45 @@
           <div class="questions__line">
             <p class="title questions__title">Сертификации которым мы обучаем</p>
             <div class="questions__arrows">
-              <svg class="questions__leftArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="swiper-button-prev questions__leftArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
               </svg>
-              <svg class="questions__rightArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="swiper-button-next questions__rightArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
               </svg>
             </div>
           </div>
-          <div class="questions__content">
-            <div class="questions__question">
-              <p class="question__title">Выбор</p>
-              <p class="question__description">Определитесь какой из представленных пакетов больше всего Вам подходит.</p><a class="button question__button js-open-modal" href="" data-modal="request">Оставить заявку</a>
-              <p class="question__number">1</p>
-            </div>
-            <div class="questions__question">
-              <p class="question__title">Покупка</p>
-              <p class="question__description">После того как выбрали подходящий пакет, покупайте его, заполняя данные в форме обратной связи и далее оплачивайте необходимую сумму.</p>
-              <div class="question__link"><a class="question__link-icon" href="">
-                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 1C18.75 0.585786 18.4142 0.25 18 0.25L11.25 0.249999C10.8358 0.249999 10.5 0.585786 10.5 0.999999C10.5 1.41421 10.8358 1.75 11.25 1.75H17.25V7.75C17.25 8.16421 17.5858 8.5 18 8.5C18.4142 8.5 18.75 8.16421 18.75 7.75L18.75 1ZM8.53033 11.5303L18.5303 1.53033L17.4697 0.469669L7.46967 10.4697L8.53033 11.5303Z" fill="#253769"></path>
-                    <path d="M15 11V16C15 17.1046 14.1046 18 13 18H3C1.89543 18 1 17.1046 1 16V6C1 4.89543 1.89543 4 3 4H8" stroke="#253769" stroke-width="1.5"></path>
-                  </svg></a>
-                <p class="question__link-text"><a class="question__link-link" href="">Доступная рассрочка</a>- узнайте как получить  </p>
+          <div class="questions__content swiper">
+            <div class="swiper-wrapper">
+              <div class="questions__question swiper-slide">
+                <p class="question__title">Выбор</p>
+                <p class="question__description">Определитесь какой из представленных пакетов больше всего Вам подходит.</p><a class="button question__button js-open-modal" href="" data-modal="request">Оставить заявку</a>
+                <p class="question__number">1</p>
               </div>
-              <p class="question__number">2</p>
-            </div>
-            <div class="questions__question">
-              <p class="question__title">Доступ открыт</p>
-              <p class="question__description">Как только оплата прошла успешно, на указанный Вами адрес электронной почты высылается ссылка на курс с доступом к материалам.</p>
-              <p class="question__number">3</p>
-            </div>
-            <div class="questions__question">
-              <p class="question__title">Доступ открыт</p>
-              <p class="question__description">Как только оплата прошла успешно, на указанный Вами адрес электронной почты высылается ссылка на курс с доступом к материалам.</p>
-              <p class="question__number">4</p>
+              <div class="questions__question swiper-slide">
+                <p class="question__title">Покупка</p>
+                <p class="question__description">После того как выбрали подходящий пакет, покупайте его, заполняя данные в форме обратной связи и далее оплачивайте необходимую сумму.</p>
+                <div class="question__link"><a class="question__link-icon" href="">
+                    <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 1C18.75 0.585786 18.4142 0.25 18 0.25L11.25 0.249999C10.8358 0.249999 10.5 0.585786 10.5 0.999999C10.5 1.41421 10.8358 1.75 11.25 1.75H17.25V7.75C17.25 8.16421 17.5858 8.5 18 8.5C18.4142 8.5 18.75 8.16421 18.75 7.75L18.75 1ZM8.53033 11.5303L18.5303 1.53033L17.4697 0.469669L7.46967 10.4697L8.53033 11.5303Z" fill="#253769"></path>
+                      <path d="M15 11V16C15 17.1046 14.1046 18 13 18H3C1.89543 18 1 17.1046 1 16V6C1 4.89543 1.89543 4 3 4H8" stroke="#253769" stroke-width="1.5"></path>
+                    </svg></a>
+                  <p class="question__link-text"><a class="question__link-link" href="">Доступная рассрочка</a>- узнайте как получить  </p>
+                </div>
+                <p class="question__number">2</p>
+              </div>
+              <div class="questions__question swiper-slide">
+                <p class="question__title">Доступ открыт</p>
+                <p class="question__description">Как только оплата прошла успешно, на указанный Вами адрес электронной почты высылается ссылка на курс с доступом к материалам.</p>
+                <p class="question__number">3</p>
+              </div>
             </div>
           </div>
           <div class="questions__arrows mobile">
-            <svg class="questions__leftArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="swiper-button-prev questions__leftArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
             </svg>
-            <svg class="questions__rightArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="swiper-button-next questions__rightArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
             </svg>
           </div>
@@ -602,6 +605,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
