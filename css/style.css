@@ -292,6 +292,15 @@ main
     background: rgba(211, 211, 211, .6);
 }
 
+.circle
+{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+}
+
 /* UI компоненты */
 /* Модальное окно */
 .modal
