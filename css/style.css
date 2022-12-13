@@ -717,7 +717,7 @@ input::placeholder
 .header__menu
 {
     position: absolute;
-    z-index: 8;
+    z-index: 999;
     top: 0;
     left: 0;
 
@@ -2052,13 +2052,18 @@ input::placeholder
     {
         margin-top: 45px;
     }
+    .sliderMain__content
+    {
+        margin-bottom: 55px;
+    }
     .sliderMain__inner
     {
         padding: 0;
     }
     .sliderMain__arrow
     {
-        top: 96%;
+        z-index: 12;
+        top: 97%;
 
         padding: 11px 14px 10px 12px;
 
@@ -2074,10 +2079,9 @@ input::placeholder
     {
         left: 69px;
     }
-    .sliderMain .slick-dots
+    .sliderMain__dots
     {
-        margin-top: 20px;
-        margin-bottom: 43px;
+        bottom: -10px !important;
     }
     .slider__slide
     {
