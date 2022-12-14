@@ -2219,6 +2219,16 @@ input::placeholder
     {
         padding: 13px 0;
     }
+    .package__item
+    {
+        line-height: 20px;
+    }
+    .package__item::before
+    {
+        top: 7px;
+
+        content: '';
+    }
     .partners
     {
         padding-bottom: 176px;
